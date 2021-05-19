@@ -226,11 +226,19 @@ div[class="c 5"] img:hover{
 		height:180px;
 	}
 	div#edu:hover span[class="e 0"]
-{
+	{
 	transition:1s ease-in-out;
 	transform:translate(10%,0);
 	
-}
+	}
+	div.con{
+	flex-direction:column;
+	}
+	div.c{
+		width:80%;
+		height:300px;
+		margin:auto;
+	}
 }
 @media screen and (max-width:812px)
 {
