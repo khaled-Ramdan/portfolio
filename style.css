@@ -1,0 +1,270 @@
+*{
+box-sizing:border-box;font-size:25px;
+}
+body{
+	background-color:rgb(222,222,221);
+}
+header{width:100%;
+height:50px;
+background-color:gray;}
+ul {
+	list-style-type:none;
+}
+ul:first-child span{float:left;width:25%;}
+li {
+	height: 50px;
+	text-align:center;
+	padding:15px;
+	font-size:25px;
+}
+li:hover{
+	background-color:rgb(236,224,207);
+	transition:.4s ease-in-out;
+	cursor:pointer;
+}
+a{
+	text-decoration:none;
+	color:lightblue;
+}
+a:hover{
+	color:blue;
+}
+article{
+	width:30%;
+	float:left;
+	background-color: rgb(222,222,222);
+	height:600px;
+	position:relative;
+	border-bottom:1px solid gray;
+}
+img{width:100%;
+height:100%;
+}
+div.photo{
+	position:relative;
+}
+div.photo div.kh{
+	visibility:hidden;
+	background-color:rgb(222,222,222);
+	position:absolute;
+	font-size:25px;
+	bottom:0;
+	right:0px;
+	width:100%;
+	height:0;
+}
+div.photo:hover img {
+	transition:.5s ease-in-out;
+	border-radius:50%;
+}
+div.photo:hover div.kh
+{
+	visibility:visible;
+	transition:1s ease-in-out;
+	height:100%;
+	padding:15px;
+	border-right:1px double black;
+}
+div.kh span{
+	padding:15;
+	color:rgb(222,222,222);
+}
+div.kh:hover span{
+	text-shadow:2px 2px 2px gray;
+}
+div.photo:hover span.t{
+	color:black;
+	transition:2.5s ease-in-out;
+}
+div.photo:hover span.t1{
+	color:black;
+	transition:3s ease-in-out;
+}
+div.photo:hover span.t2{
+	color:black;
+	transition:3.5s ease-in-out;
+}
+div.photo:hover span.t3{
+	color:black;
+	transition:4s ease-in-out;
+}
+div.photo:hover span.t4{
+	color:black;
+	transition:4.5s ease-in-out;
+}
+aside{
+	width:70%;
+	background-color: rgb(222,222,222);
+	float:left;
+	height:600px;
+	position:relative;
+	border-bottom:1px solid gray;
+}
+aside span.ti
+{
+	font-size:30px;
+	text-shadow:3px 3px 3px gray;
+	visibility:hidden;
+	padding:30px;
+	position:absolute;
+	left:40%;
+}
+aside:hover span.ti
+{
+	transition:1s ease-in-out;
+	visibility:visible;
+}
+aside span.k
+{
+		padding:15px;
+		height:0;
+		visibility:hidden;
+		position:absolute;
+		left:0;
+		top:0;
+}
+aside:hover span[class="k 1"]
+{
+		top:100px;
+}
+aside:hover span[class="k 2"]
+{
+		top:160px;
+}
+aside:hover span[class="k 3"]
+{
+		top:220px;
+}
+aside:hover span[class="k 4"]
+{
+		top:280px;
+}
+aside:hover span[class="k 5"]
+{
+		top:340px;
+}
+aside:hover span[class~="k"]
+{
+	transition:1.5s ease-in-out;
+	height:100%;
+	visibility:visible;
+}
+
+div#edu
+{
+	background-color:rgb(222,221,220);
+	border-bottom:1px solid black;
+}
+div#edu span.e{
+	display:block;
+	padding:10px;
+}
+div#edu span[class="e"]{
+	text-align:center;
+	text-shadow:5px 5px 3px gray;
+	font-size:30px;
+	padding:15px;
+}
+div#edu:hover span[class="e 0"]
+{
+	transition:1s ease-in-out;
+	transform:translate(25%,0);
+	
+}
+div#crt
+{
+	background-color:rgb(222,221,215);
+}
+footer{
+	clear:left;
+	background-color:rgb(61,61,61);
+	color:white;
+	text-align:center;
+}
+div#crt span[class="c"]
+{
+	display:block;
+	text-align:center;
+	text-shadow:5px 5px 3px gray;
+	font-size:30px;
+	padding:15px;
+}
+div#crt img{
+	padding:10px;
+	width:100%;
+	height:100%;
+}
+div.c{height:200px;}
+div.con{
+	display:flex;
+}
+div[class="c 1"] img:hover{
+	border:3px solid green;
+}
+div[class="c 2"] img:hover{
+	border:3px solid blue;
+}
+div[class="c 3"] img:hover{
+	border:3px solid red;
+}
+div[class="c 4"] img:hover{
+	border:3px solid yellow;
+}
+div[class="c 5"] img:hover{
+	border:3px solid orange;
+}
+@media screen and (max-width:1000px)
+{
+		a{
+	padding:5px;
+	font-size:20px;
+	}
+	article{width:50%;}
+	aside{width:50%;}
+	li{padding:5px;font-size:20px;}
+	div.c{
+		height:180px;
+	}
+	div#edu:hover span[class="e 0"]
+	{
+	transition:1s ease-in-out;
+	transform:translate(10%,0);
+	
+	}
+	div.con{
+	flex-direction:column;
+	}
+	div.c{
+		width:80%;
+		height:300px;
+		margin:auto;
+	}
+}
+@media screen and (max-width:812px)
+{
+	article{width:100%;}
+	aside{width:100%;}
+	a{
+	padding:5px;
+	font-size:20px;
+	}
+	div.photo:hover div.kh
+	{
+		border:none;
+	}
+	aside:hover span[class~="k"]
+	{
+		transition:1s ease-in-out;
+	}
+	div#edu:hover span[class="e 0"]
+	{
+		transform:none;
+	}
+	div.con{
+	flex-direction:column;
+	}
+	div.c{
+		width:80%;
+		margin:auto;
+	}
+}
